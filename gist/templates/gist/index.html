@@ -1,0 +1,11 @@
+<h1>Hello</h1>
+
+{% if latest_gists_list %}
+    <ul>
+    {% for gist in latest_gists_list %}
+        <li><a href="/gist/{{ gist.id }}/">{{ gist.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
