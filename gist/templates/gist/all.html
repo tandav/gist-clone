@@ -1,4 +1,6 @@
 <h1>All Gists</h1>
+<a href="{% url 'gist:all' %}">All gists</a>
+<a href="{% url 'gist:new_gist' %}">New gist</a>
 
 {% if latest_gists_list %}
     <ul>
