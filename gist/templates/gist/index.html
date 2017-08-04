@@ -1,0 +1,11 @@
+<h1>All Gists</h1>
+
+{% if latest_gists_list %}
+    <ul>
+    {% for gist in latest_gists_list %}
+        <li><a href="{% url 'gist:detail' gist.id %}">{{ gist.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No gists are available.</p>
+{% endif %}
