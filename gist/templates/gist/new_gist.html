@@ -2,4 +2,11 @@
 <a href="{% url 'gist:all' %}">All gists</a>
 <a href="{% url 'gist:new_gist' %}">New gist</a>
 
-<pre>code here<pre>
+{% comment %} <pre>code here<pre> {% endcomment %}
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'gist:new_gist' %}" method="post">{% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Create public gist</button>
+</form>
