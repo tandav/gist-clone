@@ -1,6 +1,13 @@
-<h1>Create new gist:</h1>
-<a href="{% url 'gist:all' %}">All gists</a>
-<a href="{% url 'gist:new_gist' %}">New gist</a>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'gist/style.css' %}" />
+
+<div class="navbar">
+    <h1>Create new gist:</h1>
+    <div class="nav_links">
+        <a href="{% url 'gist:all' %}">All gists</a>
+        <a href="{% url 'gist:new_gist' %}">New gist</a>
+    </div>
+</div>
 
 {% comment %} <pre>code here<pre> {% endcomment %}
 

@@ -1,7 +1,15 @@
-<h1>{{gist.title}}</h1>
-<a href="{% url 'gist:all' %}">All gists</a>
-<a href="{% url 'gist:new_gist' %}">New gist</a>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'gist/style.css' %}" />
+
+<div class="navbar">
+    <h1>username/{{gist.title}}</h1>
+    <div class="nav_links">
+        <a href="{% url 'gist:all' %}">All gists</a>
+        <a href="{% url 'gist:new_gist' %}">New gist</a>
+    </div>
+</div>
 
 <br>
 {{gist.pub_date}}
+
 <pre>{{gist.text}}</pre>

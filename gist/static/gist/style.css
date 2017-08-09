@@ -1,0 +1,48 @@
+pre {
+  border: 1px solid #aaa; 
+  background-color: #eee;
+  padding: 10px;
+  overflow: auto;
+}
+
+body {
+  /* padding: 50px; */
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.navbar {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24292e;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav_links a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 1.5em;
+}
+
+.nav_links a:hover {
+  color: #fff;
+}
+
+input.filename {
+  font-size: 14px;
+  width: 300px;
+  height: 30px;
+}
+
+textarea {
+  width: 980px;
+  height: 400px;
+  font-size: 14px;
+}
