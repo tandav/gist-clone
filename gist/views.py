@@ -6,7 +6,7 @@ from .models import Gist
 from .forms import GistForm
 
 def all(request):
-    latest_gists = Gist.objects.order_by('-pub_date')[:5]
+    latest_gists = Gist.objects.order_by('-pub_date')[:10]
     context = {'latest_gists_list': latest_gists,}
     return render(request, 'gist/all.html', context)
 
