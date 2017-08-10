@@ -14,6 +14,3 @@ class GistForm(forms.ModelForm):
     class Meta:
         model = Gist
         fields = ('title', 'text')
-        # widgets = {
-        #     'body': forms.Textarea(attrs={'cols': 80, 'rows': 20, 'label': ''})
-        # }

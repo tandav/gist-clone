@@ -6,6 +6,7 @@
     <div class="nav_links">
         <a href="{% url 'gist:all' %}">All gists</a>
         <a href="{% url 'gist:new_gist' %}">New gist</a>
+        <a href="#">{{user.get_username}}</a>
     </div>
 </div>
 
