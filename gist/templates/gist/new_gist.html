@@ -15,5 +15,7 @@
 
 <form action="{% url 'gist:new_gist' %}" method="post">{% csrf_token %}
   {{ form.as_p }}
+  <button disabled>Create private gist</button>
+  
   <button type="submit">Create public gist</button>
 </form>

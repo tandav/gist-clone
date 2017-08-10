@@ -46,3 +46,8 @@ textarea {
   height: 400px;
   font-size: 14px;
 }
+
+button {
+  padding: 10px;
+  font-size: 1.1em;
+}
